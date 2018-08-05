@@ -31,7 +31,7 @@
 									input.input(v-model="article.mycomment" type="text" placeholder="comment...")
 								div.control
 									button.button.is-info(type="submit") comment
-
+				p.no-article(v-if="articles.length === 0") No article
 				button.add-button(@click="addArticle") 
 					i.fas.fa-plus
     
